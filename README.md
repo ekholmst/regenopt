@@ -4,7 +4,7 @@ A method and code for optimizing the regeneration of a spruce-dominated stand in
 
 To run the code on the command line, give the following command:
 
-`python3 stand.csv`
+`python3 regenopt.py stand.csv`
 
 where `stand.csv` is the path to a file containing the stand data. See the header of regenopt.py as well as parameters.py for details.
 
