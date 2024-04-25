@@ -189,11 +189,6 @@ hard_coded_dominant_fertility_class = 3
 # Paths for external input data
 #
 
-
-#
-# Zephyrus
-#
-
 fertility_class_data_root = ""
 soil_type_data_root = ""
 map_sheet_root = ""
