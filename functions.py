@@ -2841,7 +2841,7 @@ def create_maplike_plots(easting_crane_tip, northing_crane_tip, stem_positions_m
         cbar.ax.tick_params(axis = 'y', which = 'minor', length = 0)
         cbar.ax.set_yticklabels(parameters.fertility_class_tick_labels, size = parameters.fertility_class_tick_label_font_size)
 
-        h_spruce_rotten_sawlog_caliber = ax.scatter(easting_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 1, theoretical_sawlog_volume > 0.0))], northing_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 1, theoretical_sawlog_volume > 0.0))], c = 'black', s = parameters.stem_markersize_medium, marker = 's', alpha = parameters.soil_type_visualization_alpha)
+        h_spruce_rotten_sawlog_caliber = ax.scatter(easting_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 1, theoretical_sawlog_volume > 0.0))], northing_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 1, theoretical_sawlog_volume > 0.0))], c = 'black', s = parameters.stem_markersize_medium, marker = 's', alpha = parameters.rot_status_one_stem_marker_alpha)
 
         h_spruce_healthy_sawlog_caliber = ax.scatter(easting_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 0, theoretical_sawlog_volume > 0.0))], northing_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 0, theoretical_sawlog_volume > 0.0))], edgecolors = 'black', facecolors = 'none', s = parameters.stem_markersize_medium, marker = 's')
 
@@ -2872,7 +2872,7 @@ def create_maplike_plots(easting_crane_tip, northing_crane_tip, stem_positions_m
         cbar.ax.tick_params(axis = 'y', which = 'minor', length = 0)
         cbar.ax.set_yticklabels(parameters.soil_type_tick_labels, size = parameters.soil_type_tick_label_font_size)
 
-        h_spruce_rotten_sawlog_caliber = ax.scatter(easting_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 1, theoretical_sawlog_volume > 0.0))], northing_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 1, theoretical_sawlog_volume > 0.0))], c = 'black', s = parameters.stem_markersize_medium, marker = 's', alpha = parameters.soil_type_visualization_alpha)
+        h_spruce_rotten_sawlog_caliber = ax.scatter(easting_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 1, theoretical_sawlog_volume > 0.0))], northing_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 1, theoretical_sawlog_volume > 0.0))], c = 'black', s = parameters.stem_markersize_medium, marker = 's', alpha = parameters.rot_status_one_stem_marker_alpha)
 
         h_spruce_healthy_sawlog_caliber = ax.scatter(easting_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 0, theoretical_sawlog_volume > 0.0))], northing_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 0, theoretical_sawlog_volume > 0.0))], edgecolors = 'black', facecolors = 'none', s = parameters.stem_markersize_medium, marker = 's')
 
@@ -2898,7 +2898,7 @@ def create_maplike_plots(easting_crane_tip, northing_crane_tip, stem_positions_m
 
         mappable = ax.imshow(terrain_map_as_array, cmap = terrain_raster_cmap, norm = terrain_raster_cmap_norm, extent = (terrain_map_pixel_center_min_easting - terrain_pixel_size_in_x_direction/2.0, terrain_map_pixel_center_max_easting + terrain_pixel_size_in_x_direction/2.0, terrain_map_pixel_center_min_northing - terrain_pixel_size_in_y_direction/2.0, terrain_map_pixel_center_max_northing + terrain_pixel_size_in_y_direction/2.0), alpha = parameters.terrain_raster_map_alpha, zorder = -999)
 
-        h_spruce_rotten_sawlog_caliber = ax.scatter(easting_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 1, theoretical_sawlog_volume > 0.0))], northing_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 1, theoretical_sawlog_volume > 0.0))], c = 'black', s = parameters.stem_markersize_medium, marker = 's', alpha = parameters.soil_type_visualization_alpha)
+        h_spruce_rotten_sawlog_caliber = ax.scatter(easting_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 1, theoretical_sawlog_volume > 0.0))], northing_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 1, theoretical_sawlog_volume > 0.0))], c = 'black', s = parameters.stem_markersize_medium, marker = 's', alpha = parameters.rot_status_one_stem_marker_alpha)
 
         h_spruce_healthy_sawlog_caliber = ax.scatter(easting_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 0, theoretical_sawlog_volume > 0.0))], northing_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 0, theoretical_sawlog_volume > 0.0))], edgecolors = 'black', facecolors = 'none', s = parameters.stem_markersize_medium, marker = 's')
 
@@ -2922,7 +2922,7 @@ def create_maplike_plots(easting_crane_tip, northing_crane_tip, stem_positions_m
     
     fig, ax = plt.subplots(figsize = parameters.figure_size)
 
-    h_spruce_rotten_sawlog_caliber = ax.scatter(easting_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 1, theoretical_sawlog_volume > 0.0))], northing_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 1, theoretical_sawlog_volume > 0.0))], c = 'black', s = parameters.stem_markersize_medium, marker = 's', alpha = parameters.soil_type_visualization_alpha)
+    h_spruce_rotten_sawlog_caliber = ax.scatter(easting_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 1, theoretical_sawlog_volume > 0.0))], northing_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 1, theoretical_sawlog_volume > 0.0))], c = 'black', s = parameters.stem_markersize_medium, marker = 's', alpha = parameters.rot_status_one_stem_marker_alpha)
 
     h_spruce_healthy_sawlog_caliber = ax.scatter(easting_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 0, theoretical_sawlog_volume > 0.0))], northing_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 0, theoretical_sawlog_volume > 0.0))], edgecolors = 'black', facecolors = 'none', s = parameters.stem_markersize_medium, marker = 's')
 
@@ -3786,7 +3786,7 @@ def create_maplike_plots(easting_crane_tip, northing_crane_tip, stem_positions_m
         cbar.ax.set_yticklabels(parameters.fertility_class_tick_labels, size = parameters.fertility_class_tick_label_font_size)
 
 
-        h_spruce_rotten_sawlog_caliber = ax.scatter(easting_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 1, theoretical_sawlog_volume > 0.0))], northing_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 1, theoretical_sawlog_volume > 0.0))], c = 'black', s = parameters.stem_markersize_medium, marker = 's', alpha = parameters.soil_type_visualization_alpha)
+        h_spruce_rotten_sawlog_caliber = ax.scatter(easting_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 1, theoretical_sawlog_volume > 0.0))], northing_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 1, theoretical_sawlog_volume > 0.0))], c = 'black', s = parameters.stem_markersize_medium, marker = 's', alpha = parameters.rot_status_one_stem_marker_alpha)
 
         h_spruce_healthy_sawlog_caliber = ax.scatter(easting_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 0, theoretical_sawlog_volume > 0.0))], northing_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 0, theoretical_sawlog_volume > 0.0))], edgecolors = 'black', facecolors = 'none', s = parameters.stem_markersize_medium, marker = 's')
 
@@ -3862,7 +3862,7 @@ def create_maplike_plots(easting_crane_tip, northing_crane_tip, stem_positions_m
         cbar.ax.set_yticklabels(parameters.soil_type_tick_labels, size = parameters.soil_type_tick_label_font_size)
 
 
-        h_spruce_rotten_sawlog_caliber = ax.scatter(easting_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 1, theoretical_sawlog_volume > 0.0))], northing_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 1, theoretical_sawlog_volume > 0.0))], c = 'black', s = parameters.stem_markersize_medium, marker = 's', alpha = parameters.soil_type_visualization_alpha)
+        h_spruce_rotten_sawlog_caliber = ax.scatter(easting_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 1, theoretical_sawlog_volume > 0.0))], northing_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 1, theoretical_sawlog_volume > 0.0))], c = 'black', s = parameters.stem_markersize_medium, marker = 's', alpha = parameters.rot_status_one_stem_marker_alpha)
 
         h_spruce_healthy_sawlog_caliber = ax.scatter(easting_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 0, theoretical_sawlog_volume > 0.0))], northing_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 0, theoretical_sawlog_volume > 0.0))], edgecolors = 'black', facecolors = 'none', s = parameters.stem_markersize_medium, marker = 's')
 
@@ -3933,7 +3933,7 @@ def create_maplike_plots(easting_crane_tip, northing_crane_tip, stem_positions_m
         mappable = ax.imshow(terrain_map_as_array, cmap = terrain_raster_cmap, norm = terrain_raster_cmap_norm, extent = (terrain_map_pixel_center_min_easting - terrain_pixel_size_in_x_direction/2.0, terrain_map_pixel_center_max_easting + terrain_pixel_size_in_x_direction/2.0, terrain_map_pixel_center_min_northing - terrain_pixel_size_in_y_direction/2.0, terrain_map_pixel_center_max_northing + terrain_pixel_size_in_y_direction/2.0), alpha = parameters.terrain_raster_map_alpha, zorder = -999)
 
 
-        h_spruce_rotten_sawlog_caliber = ax.scatter(easting_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 1, theoretical_sawlog_volume > 0.0))], northing_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 1, theoretical_sawlog_volume > 0.0))], c = 'black', s = parameters.stem_markersize_medium, marker = 's', alpha = parameters.soil_type_visualization_alpha)
+        h_spruce_rotten_sawlog_caliber = ax.scatter(easting_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 1, theoretical_sawlog_volume > 0.0))], northing_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 1, theoretical_sawlog_volume > 0.0))], c = 'black', s = parameters.stem_markersize_medium, marker = 's', alpha = parameters.rot_status_one_stem_marker_alpha)
 
         h_spruce_healthy_sawlog_caliber = ax.scatter(easting_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 0, theoretical_sawlog_volume > 0.0))], northing_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 0, theoretical_sawlog_volume > 0.0))], edgecolors = 'black', facecolors = 'none', s = parameters.stem_markersize_medium, marker = 's')
 
@@ -4002,7 +4002,7 @@ def create_maplike_plots(easting_crane_tip, northing_crane_tip, stem_positions_m
     fig, ax = plt.subplots(figsize = parameters.figure_size)
 
 
-    h_spruce_rotten_sawlog_caliber = ax.scatter(easting_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 1, theoretical_sawlog_volume > 0.0))], northing_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 1, theoretical_sawlog_volume > 0.0))], c = 'black', s = parameters.stem_markersize_medium, marker = 's', alpha = parameters.soil_type_visualization_alpha)
+    h_spruce_rotten_sawlog_caliber = ax.scatter(easting_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 1, theoretical_sawlog_volume > 0.0))], northing_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 1, theoretical_sawlog_volume > 0.0))], c = 'black', s = parameters.stem_markersize_medium, marker = 's', alpha = parameters.rot_status_one_stem_marker_alpha)
 
     h_spruce_healthy_sawlog_caliber = ax.scatter(easting_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 0, theoretical_sawlog_volume > 0.0))], northing_crane_tip[np.logical_and(species_group_id == 2, np.logical_and(rotten_200_with_sawlog == 0, theoretical_sawlog_volume > 0.0))], edgecolors = 'black', facecolors = 'none', s = parameters.stem_markersize_medium, marker = 's')
 

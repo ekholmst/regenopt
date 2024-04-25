@@ -24,6 +24,10 @@
 #
 # Uses functions.py and parameters.py.
 #
+# Development ideas for the future:
+#
+# - Change "sawlog-caliber" to "sawlog-sized" everywhere in the code
+#
 # MIT License
 #
 # Copyright (c) 2024 Natural Resources Institute Finland and Eero
