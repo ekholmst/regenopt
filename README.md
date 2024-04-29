@@ -17,3 +17,7 @@ NB! If you are the owner of the harvester data and use this code, we strongly en
 Code distributed under the MIT license. Data licensed under CC BY 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/.
 
 Tested on Ubuntu 18.04 / RHEL / Python 3.
+
+This work was supported by the TyviTuho project funded by the Ministry of Agriculture and Forestry of Finland through the Catch the carbon research and innovation program (funding decision VN/5206/2021).
+
+Contact: eero.holmstrom@luke.fi
