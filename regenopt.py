@@ -28,6 +28,9 @@
 #
 # - Change "sawlog-caliber" to "sawlog-sized" everywhere in the code
 #
+# - Instead of "tCO2-equivalent", just use "tCO2" here. We are talking
+#   solely about CO2 and not any other greenhouse gases.
+#
 # MIT License
 #
 # Copyright (c) 2024 Natural Resources Institute Finland and Eero
