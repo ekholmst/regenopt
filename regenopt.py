@@ -31,6 +31,10 @@
 # - Instead of "tCO2-equivalent", just use "tCO2" here. We are talking
 #   solely about CO2 and not any other greenhouse gases.
 #
+# - Instead of "rot area" or "rotten area", say "infected area". This
+#   is to unify terminology and to make the terminology more precise.
+#
+#
 # MIT License
 #
 # Copyright (c) 2024 Natural Resources Institute Finland and Eero
