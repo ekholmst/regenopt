@@ -8,7 +8,7 @@ To run the code on the command line, give the following command:
 
 where `stand.csv` is the path to a file containing the stand data. See the header of regenopt.py as well as parameters.py for details. An example stand is provided under data_and_models/example_stand/.
 
-Uses the following packages: numpy, matplotlib, PIL, json, alphashape, shapely, glob, sys, os, sklearn and datetime.
+Uses the following packages: numpy, matplotlib, PIL, json, alphashape, shapely, glob, sys, os, sklearn, and datetime.
 
 NB! If you are the owner of the harvester data and use this code, we strongly encourage you to share information on the location of root-rot infested areas within the stand with the forest owner.
 
