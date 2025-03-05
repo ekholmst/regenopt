@@ -1,6 +1,6 @@
 # regenopt
 
-A method and code for optimizing the regeneration of a spruce-dominated stand infected by Heterobasidion root rot disease. Please see the publication by E. Holmström et al. (in preparation) for details.
+A method and code for optimizing the regeneration of a spruce-dominated stand infected by Heterobasidion root rot disease. Please see the publication E. Holmström, J. Honkaniemi, A. Ahtikoski, T. Rajala, J. Hantula, T. Piri, J. Heikkinen, S. Suvanto, T. Räsänen, J.-A. Sorsa, K. Riekki, H. Höglund, A. Lehtonen, M. Peltoniemi, "Optimizing the regeneration of spruce-dominated stands suffering from Heterobasidion root rot in Finland" (https://doi.org/10.1016/j.compag.2025.110134) for details.
 
 To run the code on the command line, give the following command:
 
